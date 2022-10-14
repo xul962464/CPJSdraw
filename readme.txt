@@ -4,7 +4,7 @@ CPJSdraw depends on the MUMmer4 software. 'nucmer' and 'show-coords' need to be 
 
 # Installation
 
-MUMmer4: https://github.com/mummer4/mummer £®«Î»∑±£nucmer∫Õshow-coordsƒ‹πª÷±Ω” π”√£©
+MUMmer4: https://github.com/mummer4/mummer ÔºàPlease ensure that nucmer and show-coords can be used directly,unless you customize the configuration file input fileÔºâ
 SVG: cpan SVG
 CPJSdraw: git clone https://github.com/xul962464/CPJSdraw.git
 

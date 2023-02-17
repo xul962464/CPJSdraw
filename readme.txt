@@ -7,7 +7,7 @@ CPJSdraw depends on the MUMmer4 software. 'nucmer' and 'show-coords' need to be 
 MUMmer4: https://github.com/mummer4/mummer （Please ensure that nucmer and show-coords can be used directly,unless you customize the configuration file input file）
 SVG: cpan SVG
 CPJSdraw: git clone https://github.com/xul962464/CPJSdraw.git
-chmod a+x script/svg_kit/build*
+chmod a+x script/svg_kit/buildInFont
 
 # Quick Start
 

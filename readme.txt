@@ -54,13 +54,13 @@ perl CPJSdraw/bin/CPJSdraw.pl -h
 a) Simple usage
 
 	perl CPJSdraw/bin/CPJSdraw.pl -g infile1.gbk infile2.gbk ... infileN.gbk -o CPJSDRAW.svg
-
+	
 		In this case, the program will automatically identify the repeat area and plot.
 
 b) Advanced Usage
 
 	perl CPJSdraw/bin/CPJSdraw.pl -i input.cfg -o CPJSDRAW.svg
-
+	
 		This method supports the position of the repeat area of user-defined sequences, and is applicable to some special sequences, such as those with multiple repeat areas, or those whose repeat areas are too short to be identified easily.
 
 

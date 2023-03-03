@@ -769,9 +769,10 @@ print  OUT $svg->xmlify;
 
 warn "-" x 60 ,"\n";
 warn"##step4: convert svg to png and pdf...\n";
-
-`perl $Bin/../script/svg_kit/svg2xxx -t pdf $outfile`;
-`perl $Bin/../script/svg_kit/svg2xxx -t png -dpi $ppi $outfile`;
+chdir $outfile_dirname;
+`perl $Bin/../script/svg_kit/svg2xxx -t pdf $outfile_basename`;
+`perl $Bin/../script/svg_kit/svg2xxx -t png -dpi $ppi $outfile_basename`;
+chdir $pwd;
 
 warn "done.\n";
 #====================================================================================================

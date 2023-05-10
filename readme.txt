@@ -6,6 +6,7 @@ CPJSdraw depends on the MUMmer4 software. 'nucmer' and 'show-coords' need to be 
 # Cite this as
 
 	Li H, Guo Q, Xu L, Gao H, Liu L, Zhou X. 2023. CPJSdraw: analysis and visualization of junction sites of chloroplast genomes. PeerJ 11:e15326 https://doi.org/10.7717/peerj.15326
+
 # link:
 	https://peerj.com/articles/15326/
 	

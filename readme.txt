@@ -1,7 +1,14 @@
 # Introduction
+
 CPJSdraw is a software compiled by perl for visualizing chloroplast genome junction sites, which can better identify the position of circular sequences and support more genbank files.
 CPJSdraw depends on the MUMmer4 software. 'nucmer' and 'show-coords' need to be added to the environment variables. Perl SVG module is used for drawing. Finally, batik-1.7 (included in CPJSdraw) is called to convert the svg format to png and pdf formats.
 
+# Cite this as
+
+	Li H, Guo Q, Xu L, Gao H, Liu L, Zhou X. 2023. CPJSdraw: analysis and visualization of junction sites of chloroplast genomes. PeerJ 11:e15326 https://doi.org/10.7717/peerj.15326
+# link:
+	https://peerj.com/articles/15326/
+	
 # Installation
 
 MUMmer4: https://github.com/mummer4/mummer （Please ensure that nucmer and show-coords can be used directly,unless you customize the configuration file input file）
@@ -67,6 +74,4 @@ b) Advanced Usage
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 In addition, we provide online tools in Chinese: http://112.86.217.82:9929/#/tool/alltool/detail/335
 
-# Cite this as
 
-	Li H, Guo Q, Xu L, Gao H, Liu L, Zhou X. 2023. CPJSdraw: analysis and visualization of junction sites of chloroplast genomes. PeerJ 11:e15326 https://doi.org/10.7717/peerj.15326

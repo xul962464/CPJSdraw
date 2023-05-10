@@ -67,3 +67,6 @@ b) Advanced Usage
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 In addition, we provide online tools in Chinese: http://112.86.217.82:9929/#/tool/alltool/detail/335
 
+# Cite this as
+
+	Li H, Guo Q, Xu L, Gao H, Liu L, Zhou X. 2023. CPJSdraw: analysis and visualization of junction sites of chloroplast genomes. PeerJ 11:e15326 https://doi.org/10.7717/peerj.15326

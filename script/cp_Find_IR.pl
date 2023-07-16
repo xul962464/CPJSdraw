@@ -123,7 +123,7 @@ sub map_to_the_original_location{
 	my $single1_len = $s2 - 1 - ($e1 + 1) + 1;	#inter
 	my $single2_len = $len - $ir1_len - $ir2_len - $single1_len;
 	
-	if($single1_len < 1 or $single2_len < 1){	#²»´æÔÚµ¥¿½±´Çø
+	if($single1_len < 1 or $single2_len < 1){	#Â²Â»Â´Ã¦Ã”ÃšÂµÂ¥Â¿Â½Â±Â´Ã‡Ã¸
 		warn "WARN:length single copy region is 0 bp.\nWARN:total length : $len\nWARN:ir : $ir\n";
 		return 0;
 	}
@@ -326,7 +326,8 @@ sub find_ir_in_linear_seq{
 
 	mkdir $outdir unless(-d $outdir);
 
-	my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu --delta=$outdir/out.delta -b $breaklen && $show_coords $outdir/out.delta > $outdir/out.coords";
+	#my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu --delta=$outdir/out.delta -b $breaklen &> /dev/null && $show_coords $outdir/out.delta > $outdir/out.coords";
+ 	my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu -b $breaklen &> /dev/null && $show_coords $outdir/out.delta > $outdir/out.coords";
 	system "$cmd";
 	
 	open IN,"$outdir/out.coords" or die "cannot open $outdir/out.coords file";

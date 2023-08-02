@@ -1044,8 +1044,8 @@ sub get_gene_info{
 		}
 		#IRa gene maybe only one or spanning this region
 		elsif(($gene_start >= $region_info->{'IRa'}{'start'} and $gene_end <= $region_info->{'IRa'}{'end'}   ) or
-			   ($gene_start <  $region_info->{'IRa'}{'start'} and $gene_end >= $region_info->{'IRa'}{'start'} and $gene_end - $region_info->{'IRa'}{'start'} + 1 >= $region_info->{'IRa'}{'start'} - $gene_start and $gene_start > $region_info->{'IRb'}{'start'} and $gene_end < $region_info->{'LSC2'}{'end'}) or 
-			   ($gene_start <= $region_info->{'IRa'}{'end'}   and $gene_end > $region_info->{'IRa'}{'end'} and $gene_end - $region_info->{'IRa'}{'start'} <= $region_info->{'IRa'}{'start'} - $gene_start + 1 and $gene_start > $region_info->{'IRb'}{'start'} and $gene_end < $region_info->{'LSC2'}{'end'}) )
+			   ($gene_start <  $region_info->{'IRa'}{'start'} and $gene_end >= $region_info->{'IRa'}{'start'} and $gene_end - $region_info->{'IRa'}{'start'} + 1 >= $region_info->{'IRa'}{'start'} - $gene_start and $gene_start > $region_info->{'SSC'}{'start'} and $gene_end < $region_info->{'LSC2'}{'end'}) or 
+			   ($gene_start <= $region_info->{'IRa'}{'end'}   and $gene_end > $region_info->{'IRa'}{'end'} and $gene_end - $region_info->{'IRa'}{'end'} <= $region_info->{'IRa'}{'end'} - $gene_start + 1 and $gene_start > $region_info->{'SSC'}{'start'} and $gene_end < $region_info->{'LSC2'}{'end'}) )
 		{
 			push @{$gene_info->{'IRa'}},$gene->[$i];
 		}

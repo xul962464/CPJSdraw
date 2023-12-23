@@ -327,7 +327,8 @@ sub find_ir_in_linear_seq{
 	mkdir $outdir unless(-d $outdir);
 
 	#my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu --delta=$outdir/out.delta -b $breaklen &> /dev/null && $show_coords $outdir/out.delta > $outdir/out.coords";
- 	my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu -b $breaklen &> /dev/null && $show_coords $outdir/out.delta > $outdir/out.coords";
+ 	#my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu -b $breaklen &> /dev/null && $show_coords $outdir/out.delta > $outdir/out.coords";
+  	my $cmd = "$nucmer $fasta_file $fasta_file -g $max_gap_nu -b $breaklen && $show_coords $outdir/out.delta > $outdir/out.coords";
 	system "$cmd";
 	
 	open IN,"$outdir/out.coords" or die "cannot open $outdir/out.coords file";
